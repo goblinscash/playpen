@@ -7,7 +7,7 @@ import {ERC20} from "https://github.com/goblinscash/playpen/blob/main/src/ERC20.
 //import {ERC721} from "solmate/tokens/ERC721.sol";
 
 import {xERC20} from "https://github.com/goblinscash/playpen/blob/main/src/xERC20.sol";
-import {ERC20StakingPool} from ".https://github.com/goblinscash/playpen/blob/main/src/ERC20StakingPool.sol";
+import {ERC20StakingPool} from "https://github.com/goblinscash/playpen/blob/main/src/ERC20StakingPool.sol";
 //import {ERC721StakingPool} from "./ERC721StakingPool.sol";
 
 /// @title StakingPoolFactory
@@ -26,7 +26,7 @@ contract StakingPoolFactory {
 
     event CreateXERC20(xERC20 stakingPool);
     event CreateERC20StakingPool(ERC20StakingPool stakingPool);
-    event CreateERC721StakingPool(ERC721StakingPool stakingPool);
+    //event CreateERC721StakingPool(ERC721StakingPool stakingPool);
 
     /// -----------------------------------------------------------------------
     /// Immutable parameters
@@ -39,16 +39,16 @@ contract StakingPoolFactory {
     ERC20StakingPool public immutable erc20StakingPoolImplementation;
 
     /// @notice The contract used as the template for all ERC721StakingPool contracts created
-    ERC721StakingPool public immutable erc721StakingPoolImplementation;
+  //  ERC721StakingPool public immutable erc721StakingPoolImplementation;
 
     constructor(
         xERC20 xERC20Implementation_,
-        ERC20StakingPool erc20StakingPoolImplementation_,
-        ERC721StakingPool erc721StakingPoolImplementation_
+        ERC20StakingPool erc20StakingPoolImplementation_
+ //       ERC721StakingPool erc721StakingPoolImplementation_
     ) {
         xERC20Implementation = xERC20Implementation_;
         erc20StakingPoolImplementation = erc20StakingPoolImplementation_;
-        erc721StakingPoolImplementation = erc721StakingPoolImplementation_;
+ //       erc721StakingPoolImplementation = erc721StakingPoolImplementation_;
     }
 
     /// @notice Creates an xERC20 contract
@@ -110,7 +110,7 @@ contract StakingPoolFactory {
     /// @param stakeToken The token being staked in the pool
     /// @param DURATION The length of each reward period, in seconds
     /// @return stakingPool The created ERC721StakingPool contract
-    function createERC721StakingPool(
+ /*   function createERC721StakingPool(
         ERC20 rewardToken,
         ERC721 stakeToken,
         uint64 DURATION
@@ -123,5 +123,5 @@ contract StakingPoolFactory {
         stakingPool.initialize(msg.sender);
 
         emit CreateERC721StakingPool(stakingPool);
-    }
+    }*/
 }
