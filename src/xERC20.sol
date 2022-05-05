@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: AGPL-3.0
 pragma solidity ^0.8.4;
 
-import {ERC20} from "solmate/tokens/ERC20.sol";
-import {SafeTransferLib} from "solmate/utils/SafeTransferLib.sol";
+import {ERC20} from "https://github.com/goblinscash/playpen/blob/main/src/ERC20.sol";
+import {SafeTransferLib} from "https://github.com/goblinscash/playpen/blob/main/src/SafeTransferLib.sol";
 
-import {Ownable} from "./lib/Ownable.sol";
-import {FullMath} from "./lib/FullMath.sol";
+import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
+import {FullMath} from "https://github.com/goblinscash/playpen/blob/main/src/lib/FullMath.sol";
 import {ERC20 as CloneERC20} from "./lib/ERC20.sol";
-import {Multicall} from "./lib/Multicall.sol";
-import {SelfPermit} from "./lib/SelfPermit.sol";
+import {Multicall} from "https://github.com/goblinscash/playpen/blob/main/src/lib/Multicall.sol";
+import {SelfPermit} from "https://github.com/goblinscash/playpen/blob/main/src/lib/SelfPermit.sol";
 
 /// @title xERC20
 /// @author zefram.eth
