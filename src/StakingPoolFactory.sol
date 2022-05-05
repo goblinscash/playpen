@@ -7,7 +7,7 @@ import {ERC20} from "https://github.com/goblinscash/playpen/blob/main/src/ERC20.
 //import {ERC721} from "solmate/tokens/ERC721.sol";
 
 import {xERC20} from "https://github.com/goblinscash/playpen/blob/main/src/xERC20.sol";
-import {ERC20StakingPool} from "./ERC20StakingPool.sol";
+import {ERC20StakingPool} from ".https://github.com/goblinscash/playpen/blob/main/src/ERC20StakingPool.sol";
 //import {ERC721StakingPool} from "./ERC721StakingPool.sol";
 
 /// @title StakingPoolFactory
