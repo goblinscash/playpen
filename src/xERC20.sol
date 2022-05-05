@@ -6,7 +6,7 @@ import {SafeTransferLib} from "https://github.com/goblinscash/playpen/blob/main/
 
 import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 import {FullMath} from "https://github.com/goblinscash/playpen/blob/main/src/lib/FullMath.sol";
-import {ERC20 as CloneERC20} from "./lib/ERC20.sol";
+import {ERC20 as CloneERC20} from "https://github.com/goblinscash/playpen/blob/main/src/lib/ERC20.sol";
 import {Multicall} from "https://github.com/goblinscash/playpen/blob/main/src/lib/Multicall.sol";
 import {SelfPermit} from "https://github.com/goblinscash/playpen/blob/main/src/lib/SelfPermit.sol";
 
