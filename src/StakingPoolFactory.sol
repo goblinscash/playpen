@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: AGPL-3.0
 pragma solidity ^0.8.11;
 
-import {ClonesWithImmutableArgs} from "@clones/ClonesWithImmutableArgs.sol";
+import {ClonesWithImmutableArgs} from "https://github.com/goblinscash/clones-with-immutable-args/blob/master/src/ClonesWithImmutableArgs.sol";
 
-import {ERC20} from "solmate/tokens/ERC20.sol";
-import {ERC721} from "solmate/tokens/ERC721.sol";
+import {ERC20} from "https://github.com/goblinscash/playpen/blob/main/src/ERC20.sol";
+//import {ERC721} from "solmate/tokens/ERC721.sol";
 
-import {xERC20} from "./xERC20.sol";
+import {xERC20} from "https://github.com/goblinscash/playpen/blob/main/src/xERC20.sol";
 import {ERC20StakingPool} from "./ERC20StakingPool.sol";
-import {ERC721StakingPool} from "./ERC721StakingPool.sol";
+//import {ERC721StakingPool} from "./ERC721StakingPool.sol";
 
 /// @title StakingPoolFactory
 /// @author zefram.eth
